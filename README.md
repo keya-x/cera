@@ -10,9 +10,7 @@ Run order
 
 Set `RUN_MODE = "debug"` for a small end-to-end validation run. Set `RUN_MODE = "full"` for the primary study.
 
-The notebooks write all generated artifacts under `benchmark/`, `data/osworld/`, `results/`, and `figures/`. Model weights are downloaded to the local model cache and are not stored in this repository.
-
-## Repository layout
+Repository layout
 
 ```text
 cera/
