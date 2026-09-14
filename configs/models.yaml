@@ -1,0 +1,28 @@
+models:
+  - name: qwen3-8b
+    model_id: Qwen/Qwen3-8B
+    role: primary
+    quantization: 4bit_nf4
+  - name: qwen3-14b
+    model_id: Qwen/Qwen3-14B
+    role: capacity_robustness
+    quantization: 4bit_nf4
+  - name: qwen3-32b
+    model_id: Qwen/Qwen3-32B
+    role: higher_capacity_robustness
+    quantization: 4bit_nf4
+  - name: llama3.1-8b-instruct
+    model_id: meta-llama/Llama-3.1-8B-Instruct
+    role: cross_family_robustness
+    quantization: 4bit_nf4
+
+inference:
+  temperature: 0.85
+  device_map: auto
+  torch_dtype: float16
+  trust_remote_code: true
+
+reproducibility:
+  record_model_revision: true
+  record_tokenizer_revision: true
+  record_quantization: true

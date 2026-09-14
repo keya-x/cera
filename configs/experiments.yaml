@@ -1,0 +1,27 @@
+runs:
+  debug:
+    b0_tasks: 3
+    b0_seeds: [42]
+    e0a_tasks: 3
+    e0a_models: [qwen3-8b]
+    e0a_seeds: [42]
+    e0b_pairs: 3
+  full:
+    b0_tasks: 120
+    b0_seeds: [42, 43, 44]
+    e0a_tasks: 30
+    e0a_models: [qwen3-8b, qwen3-14b, qwen3-32b, llama3.1-8b-instruct]
+    e0a_seeds: [42, 43]
+    e0b_pairs: 30
+
+paths:
+  benchmark_root: benchmark
+  osworld_root: data/osworld
+  results_root: results
+  figures_root: figures
+
+thresholds:
+  minimum_action_count_e0b: 5
+  minimum_effect_count_e0b: 2
+  material_action_divergence_e0b: 0.25
+  qwen_max_abs_label_bias_margin: 8.0

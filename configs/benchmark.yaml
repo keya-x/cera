@@ -1,0 +1,26 @@
+benchmark:
+  name: CERA-Bench
+  full_tasks: 120
+  task_families:
+    software: 30
+    deployment: 30
+    data: 30
+    transactional: 30
+  seeds: [42, 43, 44]
+  minimum_escaped_effects: 2
+  primary_e0a_tasks: 30
+  primary_e0a_seeds: [42, 43]
+  primary_e0a_cases: 240
+  primary_e0b_pairs: 30
+
+resources:
+  - filesystem
+  - postgresql
+  - object_store
+  - transactional_service
+
+artifact:
+  task_split: task_level
+  development_fraction: 0.8
+  evaluation_fraction: 0.2
+  store_model_weights: false

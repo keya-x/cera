@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model caches / local inference
+.cache/
+huggingface/
+transformers/
+models/
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# Logs / temporary files
+logs/
+*.log
+*.tmp
+*.temp
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets / local environment
+.env
+.env.*
+*.key
+*.pem
+credentials.json
+
+# Local scratch
+tmp/
+temp/
+scratch/
